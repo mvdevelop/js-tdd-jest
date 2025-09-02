@@ -1,0 +1,15 @@
+{
+  "name": "tdd-jest",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "mvdevelop",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^30.1.1"
+  }
+}
