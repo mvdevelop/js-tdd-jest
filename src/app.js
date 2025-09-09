@@ -1,0 +1,18 @@
+
+// app.js
+const index = require('./index');
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.use(express.json());
+app.get('/', (req, res) => res.json({message: 'Funcionando!'}));
+
+// Get / aplicarDesconto
+app.get('/aplicarDesconto/:valor/:desconto', (req, res) => {
+    const valor = parseInt(req.params.valor);
+    const desconto = parseInt(req.params.desconto);
+    res.json({ valorDescontado: index.aplicarDesconto(valor, desconto) });   
+});
+
+module.exports = app;

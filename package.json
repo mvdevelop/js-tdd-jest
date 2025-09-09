@@ -7,9 +7,14 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node ./src/server.js"
   },
   "devDependencies": {
-    "jest": "^30.1.1"
+    "jest": "^30.1.1",
+    "supertest": "^7.1.4"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
   }
 }

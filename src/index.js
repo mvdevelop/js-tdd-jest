@@ -4,8 +4,4 @@ function aplicarDesconto(valor, desconto) {
     return valor - desconto;
 }
 
-function x() {
-    return 1 + 1;
-}
-
 module.exports = { aplicarDesconto };
